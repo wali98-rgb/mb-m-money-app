@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
       create: (_) => ExpenseProvider()..loadExpenses(),
       child: MaterialApp(
         title: 'M-Money',
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(primarySwatch: Colors.green),
         home: HomeScreen(),
       ),
